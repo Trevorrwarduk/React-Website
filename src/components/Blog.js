@@ -1,9 +1,12 @@
 var React                 = require('react');
+var MDLoader              = require('./MDLoader');
 
 class Blog extends React.Component {
   render () {
     return (
-      <h1>Blog</h1>
+      <div>
+        <MDLoader file="blog/blog001.md" />
+      </div>
     )
   }
 }
