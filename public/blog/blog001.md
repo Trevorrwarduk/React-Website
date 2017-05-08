@@ -12,6 +12,8 @@ This site uses the **REACT** framework, and the content is written using Markdow
 
 There is no backend or API's in use.
 
+>Not fully responsive yet. (it's on my todo list)
+
 ### <span style="color: #EA601A; font-family: HoboStd">The Future</span>
 Currently this site uses no backend API. The intention as time permits is to develop a **JSON** feed, providing details of the blog posts, which then allows for a simple API free Markdown blog.  
 
