@@ -6,7 +6,7 @@ class Home extends React.Component {
     render () {
       return (
         <div>
-          <MDLoader file="./blog/blog001.md" />
+          <MDLoader file="blog/blog001.md" />
         </div>
       )
     }
