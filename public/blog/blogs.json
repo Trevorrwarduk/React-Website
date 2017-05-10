@@ -1,0 +1,35 @@
+{
+  "categories": {
+    "none":           true,
+    "JavaScript":     true,
+    "Perl":           true,
+    "ReactJS":        false,
+    "Appcelerator":   false
+  },
+  "posts": [
+    {
+      "title":        "The New Website",
+      "file":         "blog001.md",
+      "date":         "May 8th 2017",
+      "sortDate":     "20170508",
+      "author":        "Trevor Ward",
+      "categories":   ["none"]
+    },
+    {
+      "title":        "The Atom Editor",
+      "file":         "blog002.md",
+      "date":         "May 7th 2017",
+      "sortDate":     "20170507",
+      "author":       "Trevor Ward",
+      "categories":   ["none"]
+    },
+    {
+      "title":        "The Atom Editor with a long title",
+      "file":         "blog003.md",
+      "date":         "May 5th 2017",
+      "sortDate":     "20170505",
+      "author":       "Trevor Ward",
+      "categories":   ["none"]
+    }
+  ]
+}

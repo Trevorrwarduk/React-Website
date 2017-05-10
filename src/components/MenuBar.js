@@ -1,7 +1,7 @@
 var React                 = require('react');
 var NavLink               = require('react-router-dom').NavLink;
 
-var MenuItem            = require('./MenuItem');
+var MenuItem              = require('./MenuItem');
 
 class MenuBar extends React.Component {
   render() {

@@ -9,11 +9,18 @@ class Home extends React.Component {
     super(props);
 
     this.state = {
-      markdown: null
+      markdown:     null
     };
+    this.setupMarkdown = this.setupMarkdown.bind(this);
+  }
+  componentWillReceiveProps(props) {
+      this.setupMarkdown(props)
   }
   componentWillMount() {
-    fetch(this.props.file)
+      this.setupMarkdown(this.props)
+  }
+  setupMarkdown(props) {
+    fetch(props.file)
       .then(response => {
         return response.text();
       })
@@ -35,7 +42,7 @@ class Home extends React.Component {
   }
 }
 Home.propTypes = {
-  file:    PropTypes.string.isRequired
+  file:        PropTypes.string.isRequired
 }
 
 module.exports = Home;

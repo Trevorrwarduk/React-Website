@@ -26,10 +26,10 @@ class App extends React.Component {
             </div>
             <div className="col-sm-10 contentArea">
               <Switch>
-                <Route exact path='/'           component={Home} />
-                <Route exact path='/projects'   component={Projects} />
-                <Route exact path='/me'         component={Me} />
-                <Route exact path='/blog'       component={Blog} />
+                <Route exact path='/'     component={Home} />
+                <Route path='/projects'   component={Projects} />
+                <Route path='/me'         component={Me} />
+                <Route path='/blog'       component={Blog} />
                 <Route component={NotFound} />
               </Switch>
             </div>
