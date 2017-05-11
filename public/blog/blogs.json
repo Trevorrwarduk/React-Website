@@ -16,18 +16,10 @@
       "categories":   ["none"]
     },
     {
-      "title":        "The Atom Editor",
+      "title":        "Atom Up & Running",
       "file":         "blog002.md",
-      "date":         "May 7th 2017",
-      "sortDate":     "20170507",
-      "author":       "Trevor Ward",
-      "categories":   ["none"]
-    },
-    {
-      "title":        "The Atom Editor with a long title",
-      "file":         "blog003.md",
-      "date":         "May 5th 2017",
-      "sortDate":     "20170505",
+      "date":         "February 9th 2017",
+      "sortDate":     "20170209",
       "author":       "Trevor Ward",
       "categories":   ["none"]
     }

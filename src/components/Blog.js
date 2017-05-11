@@ -14,15 +14,12 @@ directory and update the blogs.json file with the information.
 */
 class Blog extends React.Component {
 
-
   constructor (props) {
     super(props);
 
     this.state = {
-      blogData: null,
       blogPosts: null,
       blogCategories: null,
-      latestBlog: null,
       showBlog: null,
       dateWritten: null,
       author: null,
@@ -37,9 +34,7 @@ class Blog extends React.Component {
     // Format the categories into the select item
 
     // Format the blogs into the select item
-
     this.setState({
-      latestBlog:     data.latest,
       blogCategories: data.categories,
       blogPosts:      data.posts,
       dateWritten:    data.posts[0].date,

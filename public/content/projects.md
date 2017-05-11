@@ -6,6 +6,14 @@ Over the years I have undertaken a few projects of which I can publish or open s
 ##### [Github Repo](https://github.com/Trevorrwarduk/React-Website)
 
 
+## Grunt Basics
+>*A basic initial installation of Grunt, incorporating WATCH, JSHINT, BEAUTIFIER, TASKS.*  
+
+>It enables a quick setup of Grunt on any JavaScript project, and gives a good start to setting up specific requirements.
+
+>##### [Github Repo](https://github.com/Trevorrwarduk/Grunt-Basics)
+
+
 ## PDFREP
 >*A perl package for creating PDF reports.* **My first ever open sourced project**.  
 ##### [Github Repo](https://github.com/Trevorrwarduk/PDFREP)
