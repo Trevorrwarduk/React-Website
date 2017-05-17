@@ -3,6 +3,7 @@ var ReactRouter           = require('react-router-dom');
 var Router                = ReactRouter.BrowserRouter;
 var Route                 = ReactRouter.Route;
 var Switch                = ReactRouter.Switch;
+var BrowserHistory        = ReactRouter.BrowserHistory;
 
 var HeadingSection        = require('./HeadingSection');
 var SideBar               = require('./SideBar');
@@ -15,7 +16,7 @@ var NotFound              = require('./NotFound');
 class App extends React.Component {
   render() {
     return (
-      <Router>
+      <Router history={BrowserHistory}>
         <div className="container greenBack">
           <div className="row headingArea">
             <HeadingSection />
@@ -26,11 +27,11 @@ class App extends React.Component {
             </div>
             <div className="col-sm-10 contentArea">
               <Switch>
-                <Route exact path='/'     component={Home} />
-                <Route path='/projects'   component={Projects} />
-                <Route path='/me'         component={Me} />
-                <Route path='/blog'       component={Blog} />
-                <Route component={NotFound} />
+                <Route exact={true} path='/'  component={Home} />
+                <Route exact={true} path='/projects'      component={Projects} />
+                <Route exact={true} path='/me'            component={Me} />
+                <Route path='/blog'          component={Blog} />
+                <Route path="/*"             component={NotFound} status={404} />
               </Switch>
             </div>
           </div>

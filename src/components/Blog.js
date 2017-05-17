@@ -23,12 +23,13 @@ class Blog extends React.Component {
       showBlog: null,
       dateWritten: null,
       author: null,
-      errorHandler: null
+      errorHandler: null,
+      update: null,
     };
 
-    this.setupBlogData = this.setupBlogData.bind(this);
-    this.reloadBogPost = this.reloadBogPost.bind(this);
-
+    this.setupBlogData  = this.setupBlogData.bind(this);
+    this.reloadBogPost  = this.reloadBogPost.bind(this);
+    this.fetchData      = this.fetchData.bind(this);
   }
   setupBlogData(data) {
     // Format the categories into the select item
@@ -39,7 +40,8 @@ class Blog extends React.Component {
       blogPosts:      data.posts,
       dateWritten:    data.posts[0].date,
       author:         data.posts[0].author,
-      showBlog:       "blog/" + data.posts[0].file
+      showBlog:       "blog/" + data.posts[0].file,
+      update:         true
     })
   }
   reloadBogPost(e) {
@@ -49,7 +51,7 @@ class Blog extends React.Component {
       author:       this.state.blogPosts[e.target.selectedIndex].author
     })
   }
-  componentWillMount() {
+  fetchData() {
     fetch('blog/blogs.json')
       .then((response) => {
         return response.json();
@@ -65,18 +67,15 @@ class Blog extends React.Component {
       })
   }
   render () {
+    if (!this.state.update) {
+      this.fetchData();
+    }
     return (
       <div>
-          {!this.state.blogData
-            ? ""
-            : this.setupBlogData()
-          }
-
           {!this.state.blogCategories
             ? "Loading"
             :
               <div>
-                <hr className="seperatorLine"/>
                   <div className="blogSelectionBar">
                     <label>The Blog Posts</label>
                     <select className="blogSelect" onChange={this.reloadBogPost}>
@@ -85,6 +84,7 @@ class Blog extends React.Component {
                       })}
                     </select>
                   </div>
+                  <hr className="seperatorLine"/>
               </div>
           }
           {!this.state.showBlog
