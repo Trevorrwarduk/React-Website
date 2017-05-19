@@ -22,6 +22,14 @@
       "sortDate":     "20170209",
       "author":       "Trevor Ward",
       "categories":   ["none"]
+    },
+    {
+      "title":        "Titanium CommonJS Introduction",
+      "file":         "blog003.md",
+      "date":         "October 12th 2012",
+      "sortDate":     "20121012",
+      "author":       "Trevor Ward",
+      "categories":   ["none"]
     }
   ]
 }
