@@ -6,7 +6,6 @@ var Switch                = ReactRouter.Switch;
 var BrowserHistory        = ReactRouter.BrowserHistory;
 
 var HeadingSection        = require('./HeadingSection');
-var SideBar               = require('./SideBar');
 var Home                  = require('./Home');
 var Projects              = require('./Projects');
 var Me                    = require('./Me');
@@ -22,19 +21,18 @@ class App extends React.Component {
             <HeadingSection />
           </div>
           <div className="row bottomArea">
-            <div className="col-sm-2 sideBar">
-              <SideBar />
-            </div>
+            <div className="col-sm-1"></div>
             <div className="col-sm-10 contentArea">
               <Switch>
-                <Route exact={true} path='/'  component={Home} />
-                <Route exact={true} path='/projects'      component={Projects} />
-                <Route exact={true} path='/me'            component={Me} />
-                <Route path='/blog'          component={Blog} />
-                <Route path="/*"             component={NotFound} status={404} />
+                <Route exact={true} path='/'          component={Home} />
+                <Route exact={true} path='/projects'  component={Projects} />
+                <Route exact={true} path='/me'        component={Me} />
+                <Route path='/blog'                   component={Blog} />
+                <Route path="/*"                      component={NotFound} status={404} />
               </Switch>
             </div>
           </div>
+          <div className="col-sm-1"></div>
         </div>
       </Router>
     );

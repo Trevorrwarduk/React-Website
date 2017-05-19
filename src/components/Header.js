@@ -5,8 +5,8 @@ class Header extends React.Component {
     return (
       <div className="headerBar">
         <div>
-          <span className="orangeColor headFontLarge">Trevor R Ward </span>
-          <span className="orangeColor headFontMedium">UK .ME</span>
+          <span className="blueColor headFontLarge">Trevor R Ward </span>
+          <span className="blueColor headFontMedium">UK.ME</span>
         </div>
       </div>
     )
