@@ -108,8 +108,8 @@ Titanium’s bootstrap file is app.js, for this article this file is used as the
 
  
 
-#### app.js
-
+> **app.js**
+> ---
 > var common = require(‘/tools/common’);
 >
 > function homeWindow(inParam) {
@@ -140,8 +140,8 @@ It is good practice to separate the code base into relative modules. That is to 
 
 This has shown a very basic application using commonJS in Titanium, expanding this out to have multiple windows and tasks, requires the implementation of some sort of application architecture. You could use an MVC based model and instead of using the app.js file as the main controller you could create a controller file. Having an app.js like this:
 
-#### app.js
-
+> **app.js**
+> ---
 > var control = require(‘/control/controller’);
 >
 > control.startApp();
@@ -158,8 +158,8 @@ If your not careful, you could end up with quite a few application event handler
 
 > A way a round this is to use a single custom event, which calls a function with a switch statement in that controls the flow of the application.
 
->> /* app.js */
->>
+>> **app.js**
+>> ---
 >> var common = require(‘/tools/common’);
 >>
 >> var loadHome(inParam){
@@ -183,8 +183,8 @@ If your not careful, you could end up with quite a few application event handler
 >> }  
 >> Ti.App.addEventListener(‘NAVAPP’, navigateApp);
 
->> /* common */
->>
+>> **common**
+>> ---
 >> function navControl(inParam) {  
 >> Ti.App.fireEvent(‘NAVAPP’, inParam);  
 >> }  
