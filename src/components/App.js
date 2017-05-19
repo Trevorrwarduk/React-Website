@@ -11,6 +11,7 @@ var Projects              = require('./Projects');
 var Me                    = require('./Me');
 var Blog                  = require('./Blog');
 var NotFound              = require('./NotFound');
+var RightSideBar          = require('./RightSideBar');
 
 class App extends React.Component {
   render() {
@@ -31,8 +32,8 @@ class App extends React.Component {
                 <Route path="/*"                      component={NotFound} status={404} />
               </Switch>
             </div>
+            <div className="col-sm-1"><RightSideBar /></div>
           </div>
-          <div className="col-sm-1"></div>
         </div>
       </Router>
     );

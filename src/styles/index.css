@@ -92,7 +92,7 @@ a:hover {
   margin: 5px 0 5px 0;
   border: 0;
   height: 2px;
-  background: var(--orange);
+  background: var(--blue);
 }
 .headerBar {
   width: 330px;
@@ -210,10 +210,11 @@ label {
   color: var(--blue);
 }
 .sideBarSeperator {
-  margin: 5px 0 5px 0;
+  margin: 10px auto;
   border: 0;
-  height: 1px;
-  background: transparent;
+  height: 2px;
+  width: 75%;
+  background: var(--blue);
 }
 .smallRoundImage {
   padding: 0;
@@ -222,8 +223,9 @@ label {
   border-radius: 5%;
 }
 .sideBarImage {
+  display: block;
+  margin: 0 auto;
   width: 75%;
-  resizeMode: 'cover';
 }
 .roundCorner {
   border-radius: 5%;

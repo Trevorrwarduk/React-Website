@@ -9,7 +9,8 @@ class Home extends React.Component {
     super(props);
 
     this.state = {
-      markdown:     null
+      markdown:     null,
+      errorHandler: null
     };
     this.setupMarkdown = this.setupMarkdown.bind(this);
   }
@@ -29,6 +30,11 @@ class Home extends React.Component {
           markdown: Marked(text)
         })
       })
+      .catch((ex) => {
+        this.setState({
+          errorHandler:     true,
+        })
+      })
   }
   render () {
     return (
@@ -36,6 +42,12 @@ class Home extends React.Component {
         {!this.state.markdown
           ? "LOADING"
           : <ReactMarkDown source={this.state.markdown} />
+        }
+        {!this.state.errorHandler
+          ? ""
+          : <div>
+              <h1>Something went wrong</h1>
+            </div>
         }
       </div>
     )
