@@ -1,35 +1,31 @@
 {
-  "categories": {
-    "none":           true,
-    "JavaScript":     true,
-    "Perl":           true,
-    "ReactJS":        false,
-    "Appcelerator":   false
-  },
+  "categories": [
+    {"title": "All",          "posts": [0, 1, 2]},
+    {"title": "Atom",         "posts": [1]},
+    {"title": "Appcelerator", "posts": [2]},
+    {"title": "JavaScript",   "posts": [1, 2]}
+  ],
   "posts": [
     {
       "title":        "The New Website",
       "file":         "blog001.md",
       "date":         "May 8th 2017",
       "sortDate":     "20170508",
-      "author":        "Trevor Ward",
-      "categories":   ["none"]
+      "author":        "Trevor Ward"
     },
     {
       "title":        "Atom Up & Running",
       "file":         "blog002.md",
       "date":         "February 9th 2017",
       "sortDate":     "20170209",
-      "author":       "Trevor Ward",
-      "categories":   ["none"]
+      "author":       "Trevor Ward"
     },
     {
       "title":        "Titanium CommonJS Introduction",
       "file":         "blog003.md",
       "date":         "October 12th 2012",
       "sortDate":     "20121012",
-      "author":       "Trevor Ward",
-      "categories":   ["none"]
+      "author":       "Trevor Ward"
     }
   ]
 }

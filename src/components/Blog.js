@@ -19,6 +19,8 @@ class Blog extends React.Component {
 
     this.state = {
       blogPosts: null,
+      selectedPosts: null,
+      selectedItem: null,
       blogCategories: null,
       showBlog: null,
       dateWritten: null,
@@ -27,28 +29,68 @@ class Blog extends React.Component {
       update: null,
     };
 
-    this.setupBlogData  = this.setupBlogData.bind(this);
-    this.reloadBogPost  = this.reloadBogPost.bind(this);
-    this.fetchData      = this.fetchData.bind(this);
+    this.setupBlogData      = this.setupBlogData.bind(this);
+    this.reloadBlogPost     = this.reloadBlogPost.bind(this);
+    this.loadCategoryPosts  = this.loadCategoryPosts.bind(this);
+    this.fetchData          = this.fetchData.bind(this);
   }
   setupBlogData(data) {
-    // Format the categories into the select item
-
-    // Format the blogs into the select item
     this.setState({
       blogCategories: data.categories,
       blogPosts:      data.posts,
+      selectedPosts:  data.posts,
       dateWritten:    data.posts[0].date,
       author:         data.posts[0].author,
       showBlog:       "blog/" + data.posts[0].file,
+      selectedItem:   data.posts[0].file,
       update:         true
     })
   }
-  reloadBogPost(e) {
+  reloadBlogPost(e) {
     this.setState({
-      showBlog:     "blog/" + this.state.blogPosts[e.target.selectedIndex].file,
-      dateWritten:  this.state.blogPosts[e.target.selectedIndex].date,
-      author:       this.state.blogPosts[e.target.selectedIndex].author
+      showBlog:     "blog/" + this.state.selectedPosts[e.target.selectedIndex].file,
+      dateWritten:  this.state.selectedPosts[e.target.selectedIndex].date,
+      author:       this.state.selectedPosts[e.target.selectedIndex].author
+    })
+  }
+  loadCategoryPosts(e) {
+    this.setState({
+      selectedPosts: null,
+      selectedItem:  null,
+      showBlog:      null,
+      dateWritten:   null,
+      author:        null
+    })
+
+    var firstBlogarray = [];
+
+    if (e.target.value === 'All') {
+       firstBlogarray.push(this.state.blogPosts);
+       firstBlogarray.push("blog/" + this.state.blogPosts[0].file);
+       firstBlogarray.push(this.state.blogPosts[0].date);
+       firstBlogarray.push(this.state.blogPosts[0].author);
+    } else {
+      let catItems = this.state.blogCategories[e.target.selectedIndex].posts;
+      let postItems = [];
+
+      console.log(catItems);
+
+      catItems.map((item) => {
+        return postItems.push(this.state.blogPosts[item])
+      })
+      firstBlogarray.push(postItems);
+      firstBlogarray.push("blog/" + postItems[0].file);
+      firstBlogarray.push(postItems[0].file);
+      firstBlogarray.push(postItems[0].date);
+      firstBlogarray.push(postItems[0].author);
+    }
+
+    this.setState({
+      selectedPosts: firstBlogarray[0],
+      showBlog:      firstBlogarray[1],
+      selectedItem:  firstBlogarray[2],
+      dateWritten:   firstBlogarray[3],
+      author:        firstBlogarray[4]
     })
   }
   fetchData() {
@@ -60,7 +102,6 @@ class Blog extends React.Component {
         this.setupBlogData(json);
       })
       .catch((ex) => {
-        console.log('ERROR');
         this.setState({
           errorHandler:     true,
         })
@@ -73,14 +114,32 @@ class Blog extends React.Component {
     return (
       <div>
           {!this.state.blogCategories
-            ? "Loading"
+            ? ""
+            :
+              <div>
+                <div className="blogSelectionBar">
+                  <label>Sort by Category</label>
+                  <select className="blogSelect" onChange={this.loadCategoryPosts}>
+                    {this.state.blogCategories.map(function(category) {
+                        return (
+                          <option key={category.title} value={category.title}>{category.title} ~ ( {category.posts.length} )</option>
+                        )
+                    })}
+                  </select>
+                </div>
+              </div>
+          }
+          {!this.state.selectedPosts
+            ? ""
             :
               <div>
                   <div className="blogSelectionBar">
                     <label>The Blog Posts</label>
-                    <select className="blogSelect" onChange={this.reloadBogPost}>
-                      {this.state.blogPosts.map(function(post) {
-                        return <option key={post.file} value={post.file}>{post.title} ~ {post.date}</option>
+                    <select className="blogSelect" value={this.state.selectedItem} onChange={this.reloadBlogPost}>
+                      {this.state.selectedPosts.map(function(post) {
+                        return (
+                          <option key={post.file} value={post.file}>{post.title} ~ {post.date}</option>
+                        )
                       })}
                     </select>
                   </div>
@@ -88,7 +147,7 @@ class Blog extends React.Component {
               </div>
           }
           {!this.state.showBlog
-            ? ""
+            ? "LOADING"
             : <div>
                 <div className="blogInfoBar">
                   <span className="blogInfoAuthor">{this.state.author}</span>
