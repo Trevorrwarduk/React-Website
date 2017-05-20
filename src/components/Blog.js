@@ -50,7 +50,8 @@ class Blog extends React.Component {
     this.setState({
       showBlog:     "blog/" + this.state.selectedPosts[e.target.selectedIndex].file,
       dateWritten:  this.state.selectedPosts[e.target.selectedIndex].date,
-      author:       this.state.selectedPosts[e.target.selectedIndex].author
+      author:       this.state.selectedPosts[e.target.selectedIndex].author,
+      selectedItem: this.state.selectedPosts[e.target.selectedIndex].file
     })
   }
   loadCategoryPosts(e) {
@@ -62,18 +63,17 @@ class Blog extends React.Component {
       author:        null
     })
 
-    var firstBlogarray = [];
+    let firstBlogarray = [];
 
     if (e.target.value === 'All') {
        firstBlogarray.push(this.state.blogPosts);
        firstBlogarray.push("blog/" + this.state.blogPosts[0].file);
+       firstBlogarray.push(this.state.blogPosts[0].file);
        firstBlogarray.push(this.state.blogPosts[0].date);
        firstBlogarray.push(this.state.blogPosts[0].author);
     } else {
       let catItems = this.state.blogCategories[e.target.selectedIndex].posts;
       let postItems = [];
-
-      console.log(catItems);
 
       catItems.map((item) => {
         return postItems.push(this.state.blogPosts[item])
