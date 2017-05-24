@@ -14,11 +14,11 @@ class Home extends React.Component {
   }
   setupFirstBlog(data) {
     this.setState({
-      showBlog:       "blog/" + data.posts[0].file
+      showBlog:       "/blogContent/" + data.posts[0].file
     })
   }
   componentWillMount() {
-    fetch('blog/blogs.json')
+    fetch('/blogContent/blogs.json')
       .then((response) => {
         return response.json();
       })
@@ -26,7 +26,6 @@ class Home extends React.Component {
         this.setupFirstBlog(json);
       })
       .catch((ex) => {
-        console.log('ERROR');
         this.setState({
           errorHandler:     true,
         })

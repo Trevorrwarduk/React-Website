@@ -5,7 +5,7 @@ class Me extends React.Component {
   render () {
     return (
       <div>
-        <MDLoader file="content/me.md"/>
+        <MDLoader file="/content/me.md"/>
       </div>
     )
   }

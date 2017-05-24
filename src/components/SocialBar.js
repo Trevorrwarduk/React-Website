@@ -8,7 +8,7 @@ class SocialBar extends React.Component {
       <div className="socialBar">
         <a className="floatLeft"
            href="https://twitter.com/trevorrwarduk"
-           target="_blank">
+           target="_blank" rel="noopener noreferrer">
           <MenuItem
             image='twitter.png'
             title="Twitter"
@@ -16,7 +16,7 @@ class SocialBar extends React.Component {
         </a>
         <a className="floatLeft"
            href="https://www.linkedin.com/in/trevorrwarduk/"
-           target="_blank">
+           target="_blank" rel="noopener noreferrer">
           <MenuItem
             image='linkedin.png'
             title="LinkedIn"
@@ -24,7 +24,7 @@ class SocialBar extends React.Component {
         </a>
         <a className="floatLeft"
            href="https://www.facebook.com/TrevorRWardUK"
-           target="_blank">
+           target="_blank" rel="noopener noreferrer">
           <MenuItem
             image='facebook.png'
             title="Facebook"
@@ -32,7 +32,7 @@ class SocialBar extends React.Component {
         </a>
         <a className="floatLeft"
            href="https://github.com/Trevorrwarduk"
-           target="_blank">
+           target="_blank" rel="noopener noreferrer">
           <MenuItem
             image='github.png'
             title="Github"

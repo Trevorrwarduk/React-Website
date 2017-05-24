@@ -1,17 +1,9 @@
 var React                 = require('react');
+
 var MDLoader              = require('./MDLoader');
 
-/*
-This blog is controlled by a JSON file in the public blo directory blogs.JSON.
+const fileLocation        = '/blogContent/';
 
-This file is loaded and the details rendered to enable the selection and searching
-of the blog posts.
-
-To add a new blog post, create the mardown file, place it into the public/blog
-directory and update the blogs.json file with the information.
-
-
-*/
 class Blog extends React.Component {
 
   constructor (props) {
@@ -25,14 +17,12 @@ class Blog extends React.Component {
       showBlog: null,
       dateWritten: null,
       author: null,
-      errorHandler: null,
-      update: null,
+      errorHandler: null
     };
 
     this.setupBlogData      = this.setupBlogData.bind(this);
     this.reloadBlogPost     = this.reloadBlogPost.bind(this);
     this.loadCategoryPosts  = this.loadCategoryPosts.bind(this);
-    this.fetchData          = this.fetchData.bind(this);
   }
   setupBlogData(data) {
     this.setState({
@@ -41,14 +31,13 @@ class Blog extends React.Component {
       selectedPosts:  data.posts,
       dateWritten:    data.posts[0].date,
       author:         data.posts[0].author,
-      showBlog:       "blog/" + data.posts[0].file,
-      selectedItem:   data.posts[0].file,
-      update:         true
+      showBlog:       fileLocation + data.posts[0].file,
+      selectedItem:   data.posts[0].file
     })
   }
   reloadBlogPost(e) {
     this.setState({
-      showBlog:     "blog/" + this.state.selectedPosts[e.target.selectedIndex].file,
+      showBlog:     fileLocation + this.state.selectedPosts[e.target.selectedIndex].file,
       dateWritten:  this.state.selectedPosts[e.target.selectedIndex].date,
       author:       this.state.selectedPosts[e.target.selectedIndex].author,
       selectedItem: this.state.selectedPosts[e.target.selectedIndex].file
@@ -67,7 +56,7 @@ class Blog extends React.Component {
 
     if (e.target.value === 'All') {
        firstBlogarray.push(this.state.blogPosts);
-       firstBlogarray.push("blog/" + this.state.blogPosts[0].file);
+       firstBlogarray.push(fileLocation + this.state.blogPosts[0].file);
        firstBlogarray.push(this.state.blogPosts[0].file);
        firstBlogarray.push(this.state.blogPosts[0].date);
        firstBlogarray.push(this.state.blogPosts[0].author);
@@ -79,7 +68,7 @@ class Blog extends React.Component {
         return postItems.push(this.state.blogPosts[item])
       })
       firstBlogarray.push(postItems);
-      firstBlogarray.push("blog/" + postItems[0].file);
+      firstBlogarray.push(fileLocation + postItems[0].file);
       firstBlogarray.push(postItems[0].file);
       firstBlogarray.push(postItems[0].date);
       firstBlogarray.push(postItems[0].author);
@@ -93,24 +82,26 @@ class Blog extends React.Component {
       author:        firstBlogarray[4]
     })
   }
-  fetchData() {
-    fetch('blog/blogs.json')
+  componentWillMount() {
+    let jsonFile = fileLocation + 'blogs.json';
+
+    fetch(jsonFile)
       .then((response) => {
+        console.log("IM FETCHING");
         return response.json();
       })
       .then((json) => {
+        console.log("I FETCHED");
         this.setupBlogData(json);
       })
       .catch((ex) => {
+        console.log('I FAILED :( ' + ex);
         this.setState({
           errorHandler:     true,
         })
       })
   }
   render () {
-    if (!this.state.update) {
-      this.fetchData();
-    }
     return (
       <div>
           {!this.state.blogCategories
