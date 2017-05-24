@@ -1,18 +1,8 @@
 var React                 = require('react');
+
 var MDLoader              = require('./MDLoader');
 
-/*
-This blog is controlled by a JSON file in the public blo directory blogs.JSON.
-
-This file is loaded and the details rendered to enable the selection and searching
-of the blog posts.
-
-To add a new blog post, create the mardown file, place it into the public/blog
-directory and update the blogs.json file with the information.
-
-
-*/
-const fileLocation = '/blog/';
+const fileLocation        = '/blogContent/';
 
 class Blog extends React.Component {
 
@@ -27,16 +17,12 @@ class Blog extends React.Component {
       showBlog: null,
       dateWritten: null,
       author: null,
-      errorHandler: null,
-      update: null,
+      errorHandler: null
     };
 
     this.setupBlogData      = this.setupBlogData.bind(this);
     this.reloadBlogPost     = this.reloadBlogPost.bind(this);
     this.loadCategoryPosts  = this.loadCategoryPosts.bind(this);
-    this.fetchData          = this.fetchData.bind(this);
-
-    this.fetchData();
   }
   setupBlogData(data) {
     this.setState({
@@ -46,8 +32,7 @@ class Blog extends React.Component {
       dateWritten:    data.posts[0].date,
       author:         data.posts[0].author,
       showBlog:       fileLocation + data.posts[0].file,
-      selectedItem:   data.posts[0].file,
-      update:         true
+      selectedItem:   data.posts[0].file
     })
   }
   reloadBlogPost(e) {
@@ -97,17 +82,20 @@ class Blog extends React.Component {
       author:        firstBlogarray[4]
     })
   }
-  fetchData() {
+  componentWillMount() {
     let jsonFile = fileLocation + 'blogs.json';
 
     fetch(jsonFile)
       .then((response) => {
+        console.log("IM FETCHING");
         return response.json();
       })
       .then((json) => {
+        console.log("I FETCHED");
         this.setupBlogData(json);
       })
       .catch((ex) => {
+        console.log('I FAILED :( ' + ex);
         this.setState({
           errorHandler:     true,
         })
