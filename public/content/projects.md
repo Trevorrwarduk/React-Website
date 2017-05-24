@@ -16,6 +16,6 @@
 
 
 ## PDFREP
->A perl package for creating PDF reports.* **My first ever open sourced project.  
+>A perl package for creating PDF reports. **My first ever open sourced project.**  
 
 >##### [Github Repo](https://github.com/Trevorrwarduk/PDFREP)
