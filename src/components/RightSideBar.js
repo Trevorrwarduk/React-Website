@@ -6,11 +6,11 @@ class SideBar extends React.Component {
   render () {
     return (
       <div>
-        <a href="http://amzn.to/2qFkcdy" target="_blank">
+        <a href="http://amzn.to/2qFkcdy" target="_blank" rel="noopener noreferrer">
           <SideImage image="/assets/sideBar/atom.jpg"
             altText="Atom Editor" />
         </a>
-        <a href="http://onyourfeetday.com/" target="_blank">
+        <a href="http://onyourfeetday.com/" target="_blank" rel="noopener noreferrer">
           <SideImage image="/assets/sideBar/oyf17.jpeg"
             altText="On Your Feet 2017"/>
         </a>

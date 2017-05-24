@@ -5,7 +5,7 @@ class Projects extends React.Component {
   render () {
     return (
       <div>
-        <MDLoader file="content/projects.md" />
+        <MDLoader file="/content/projects.md" />
       </div>
     )
   }

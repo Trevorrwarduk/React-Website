@@ -12,6 +12,8 @@ directory and update the blogs.json file with the information.
 
 
 */
+const fileLocation = '/blog/';
+
 class Blog extends React.Component {
 
   constructor (props) {
@@ -33,6 +35,8 @@ class Blog extends React.Component {
     this.reloadBlogPost     = this.reloadBlogPost.bind(this);
     this.loadCategoryPosts  = this.loadCategoryPosts.bind(this);
     this.fetchData          = this.fetchData.bind(this);
+
+    this.fetchData();
   }
   setupBlogData(data) {
     this.setState({
@@ -41,14 +45,14 @@ class Blog extends React.Component {
       selectedPosts:  data.posts,
       dateWritten:    data.posts[0].date,
       author:         data.posts[0].author,
-      showBlog:       "blog/" + data.posts[0].file,
+      showBlog:       fileLocation + data.posts[0].file,
       selectedItem:   data.posts[0].file,
       update:         true
     })
   }
   reloadBlogPost(e) {
     this.setState({
-      showBlog:     "blog/" + this.state.selectedPosts[e.target.selectedIndex].file,
+      showBlog:     fileLocation + this.state.selectedPosts[e.target.selectedIndex].file,
       dateWritten:  this.state.selectedPosts[e.target.selectedIndex].date,
       author:       this.state.selectedPosts[e.target.selectedIndex].author,
       selectedItem: this.state.selectedPosts[e.target.selectedIndex].file
@@ -67,7 +71,7 @@ class Blog extends React.Component {
 
     if (e.target.value === 'All') {
        firstBlogarray.push(this.state.blogPosts);
-       firstBlogarray.push("blog/" + this.state.blogPosts[0].file);
+       firstBlogarray.push(fileLocation + this.state.blogPosts[0].file);
        firstBlogarray.push(this.state.blogPosts[0].file);
        firstBlogarray.push(this.state.blogPosts[0].date);
        firstBlogarray.push(this.state.blogPosts[0].author);
@@ -79,7 +83,7 @@ class Blog extends React.Component {
         return postItems.push(this.state.blogPosts[item])
       })
       firstBlogarray.push(postItems);
-      firstBlogarray.push("blog/" + postItems[0].file);
+      firstBlogarray.push(fileLocation + postItems[0].file);
       firstBlogarray.push(postItems[0].file);
       firstBlogarray.push(postItems[0].date);
       firstBlogarray.push(postItems[0].author);
@@ -94,7 +98,9 @@ class Blog extends React.Component {
     })
   }
   fetchData() {
-    fetch('blog/blogs.json')
+    let jsonFile = fileLocation + 'blogs.json';
+
+    fetch(jsonFile)
       .then((response) => {
         return response.json();
       })
@@ -108,9 +114,6 @@ class Blog extends React.Component {
       })
   }
   render () {
-    if (!this.state.update) {
-      this.fetchData();
-    }
     return (
       <div>
           {!this.state.blogCategories
