@@ -1,5 +1,4 @@
 var React                 = require('react');
-var Marked                = require('marked');
 var PropTypes             = require('prop-types');
 
 var ReactMarkDown         = require('react-markdown');
@@ -27,7 +26,7 @@ class Home extends React.Component {
       })
       .then(text => {
         this.setState({
-          markdown: Marked(text)
+          markdown: text
         })
       })
       .catch((ex) => {
