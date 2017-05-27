@@ -1,15 +1,15 @@
 var React                 = require('react');
 
-var MenuItem              = require('./MenuItem');
+var SocialItem            = require('./SocialItem');
 
 class SocialBar extends React.Component {
   render () {
     return (
-      <div className="socialBar">
+      <div className="centered">
         <a className="floatLeft"
            href="https://twitter.com/trevorrwarduk"
            target="_blank" rel="noopener noreferrer">
-          <MenuItem
+          <SocialItem
             image='twitter.png'
             title="Twitter"
             altText='Twitter Social'/>
@@ -17,7 +17,7 @@ class SocialBar extends React.Component {
         <a className="floatLeft"
            href="https://www.linkedin.com/in/trevorrwarduk/"
            target="_blank" rel="noopener noreferrer">
-          <MenuItem
+          <SocialItem
             image='linkedin.png'
             title="LinkedIn"
             altText='LinkedIn Social'/>
@@ -25,7 +25,7 @@ class SocialBar extends React.Component {
         <a className="floatLeft"
            href="https://www.facebook.com/TrevorRWardUK"
            target="_blank" rel="noopener noreferrer">
-          <MenuItem
+          <SocialItem
             image='facebook.png'
             title="Facebook"
             altText='Facebook Social'/>
@@ -33,7 +33,7 @@ class SocialBar extends React.Component {
         <a className="floatLeft"
            href="https://github.com/Trevorrwarduk"
            target="_blank" rel="noopener noreferrer">
-          <MenuItem
+          <SocialItem
             image='github.png'
             title="Github"
             altText='Github Social'/>
