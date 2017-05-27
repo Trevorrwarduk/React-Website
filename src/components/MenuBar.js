@@ -6,7 +6,7 @@ var MenuItem              = require('./MenuItem');
 class MenuBar extends React.Component {
   render() {
     return (
-      <div className="menuBar">
+      <div className="menuBar floatLeft">
         <NavLink className="floatLeft" exact to='/'>
           <MenuItem
             image='home.png'

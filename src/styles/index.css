@@ -100,6 +100,12 @@ img[src$="centerme"] {
   border-bottom: 2px solid var(--orange);
   border-right: 2px solid var(--orange);
   border-left: 2px solid var(--orange);
+  height: auto;
+}
+.footerBar {
+  position: absolute;
+  bottom: 0px;
+  height: 30px;
 }
 .strapline {
   padding: 0;
@@ -115,21 +121,11 @@ img[src$="centerme"] {
 }
 .headerBar {
   width: 330px;
-  margin: auto;
 }
 .menuBar {
   width: 184px;
   padding: 0;
   margin: auto;
-  float: left;
-  border: 2px solid var(--orange);
-  background-color: var(--blue);
-}
-.socialBar {
-  width: 184px;
-  padding: 0;
-  margin: 0;
-  float: right;
   border: 2px solid var(--orange);
   background-color: var(--blue);
 }
@@ -171,6 +167,16 @@ img[src$="centerme"] {
   color: var(--blue);
   font-style: italic;
 }
+.socialItem {
+  padding: 0;
+  width:  45px;
+  height: 45px;
+  text-decoration: none;
+}
+.socialItem:hover {
+  text-decoration: none;
+}
+
 .menuItem {
   padding: 0;
   width:  45px;
@@ -188,6 +194,21 @@ img[src$="centerme"] {
 .active {
   text-decoration: none;
   background-color: var(--orange);
+}
+.socialIcon {
+  display: block;
+  height:  30px;
+  border: 2px solid var(--blue);
+  margin: auto;
+
+}
+.socialText {
+  font-size:    8px;
+  font-weight:  500;
+  font-family:  var(--BodyFont);
+  font-style:   italic;
+  text-align: center;
+  text-decoration: none;
 }
 .icon {
   margin: 0;
@@ -248,4 +269,13 @@ img[src$="centerme"] {
 }
 .floatRight {
   float: right;
+}
+.centered {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.circleRadius {
+  border-radius: 50%;
+  /*border: 2px solid var(--blue);*/
 }

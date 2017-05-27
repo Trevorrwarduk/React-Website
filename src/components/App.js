@@ -12,6 +12,7 @@ var Me                    = require('./Me');
 var Blog                  = require('./Blog');
 var NotFound              = require('./NotFound');
 var RightSideBar          = require('./RightSideBar');
+var SocialBar             = require('./SocialBar');
 
 class App extends React.Component {
   render() {
@@ -34,6 +35,9 @@ class App extends React.Component {
             </div>
             <div className="col-sm-1"><RightSideBar /></div>
           </div>
+          <footer className="footerBar">
+            <SocialBar />
+          </footer>
         </div>
       </Router>
     );
