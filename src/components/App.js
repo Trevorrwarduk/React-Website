@@ -18,22 +18,26 @@ class App extends React.Component {
   render() {
     return (
       <Router history={BrowserHistory}>
-        <div className="container greenBack">
-          <div className="row headingArea">
-            <HeadingSection />
-          </div>
-          <div className="row bottomArea">
-            <div className="col-sm-1"></div>
-            <div className="col-sm-10 contentArea">
-              <Switch>
-                <Route exact={true} path='/'          component={Home} />
-                <Route exact={true} path='/projects'  component={Projects} />
-                <Route exact={true} path='/me'        component={Me} />
-                <Route exact={true} path='/blog'      component={Blog} />
-                <Route path="/*"                      component={NotFound} status={404} />
-              </Switch>
+        <div>
+          <div className="headingBit"> </div>
+
+          <div className="container greenBack">
+            <div className="row headingArea">
+              <HeadingSection />
             </div>
-            <div className="col-sm-1"><RightSideBar /></div>
+            <div className="row bottomArea">
+              <div className="col-sm-1"></div>
+              <div className="col-sm-10 contentArea">
+                <Switch>
+                  <Route exact={true} path='/'          component={Home} />
+                  <Route exact={true} path='/projects'  component={Projects} />
+                  <Route exact={true} path='/me'        component={Me} />
+                  <Route exact={true} path='/blog'      component={Blog} />
+                  <Route path="/*"                      component={NotFound} status={404} />
+                </Switch>
+              </div>
+              <div className="col-sm-1"><RightSideBar /></div>
+            </div>
           </div>
           <footer className="footerBar">
             <SocialBar />

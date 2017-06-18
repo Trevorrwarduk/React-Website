@@ -122,12 +122,13 @@ img[src$="centerme"] {
 .headerBar {
   width: 330px;
 }
+.headingBit {
+  height: 20px;
+  width: 100%;
+}
 .menuBar {
-  width: 184px;
+  width: 200px;
   padding: 0;
-  margin: auto;
-  border: 2px solid var(--orange);
-  background-color: var(--blue);
 }
 .blogSelectionBar {
   height: 40px;
@@ -179,51 +180,50 @@ img[src$="centerme"] {
 
 .menuItem {
   padding: 0;
-  width:  45px;
-  height: 45px;
-  border: 1px solid var(--blue);
+  width:  48px;
+  height: 48px;
+  text-decoration: none;
 }
 .menuItem:hover {
   text-decoration: none;
-  border: 1px solid var(--orange);
+  color: var(--blue);
 }
 .menuItem:focus {
   text-decoration: none;
-  border: 1px solid var(--orange);
+  color: var(--blue);
 }
 .active {
   text-decoration: none;
-  background-color: var(--orange);
+  background-color: inherit;
+  color: var(--blue);
 }
 .socialIcon {
   display: block;
-  height:  30px;
+  height:  32px;
   border: 2px solid var(--blue);
   margin: auto;
 
 }
 .socialText {
-  font-size:    8px;
-  font-weight:  500;
-  font-family:  var(--BodyFont);
-  font-style:   italic;
+  font-size:    9px;
+  font-weight:  700;
+  font-family:  inherit;
   text-align: center;
   text-decoration: none;
 }
 .icon {
-  margin: 0;
-  padding-left: 12px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  height:  30px;
-  text-align: center;
+  margin: auto;
+  display: block;
+  padding: 5px;
+  height:  32px;
   text-decoration: none;
+  border: 2px solid var(--green);
+  background-color: var(--green);
 }
 .iconText {
-  font-size:    8px;
+  font-size:    10px;
   font-weight:  500;
   font-family:  var(--BodyFont);
-  font-style:   italic;
   text-align:   center;
   text-decoration: none;
 }
@@ -277,5 +277,4 @@ img[src$="centerme"] {
 }
 .circleRadius {
   border-radius: 50%;
-  /*border: 2px solid var(--blue);*/
 }
