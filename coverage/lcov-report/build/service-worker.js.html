@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for build/service-worker.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">All files</a> / <a href="index.html">build</a> service-worker.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/65</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/33</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/32</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/1</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">"use strict";function <span class="fstat-no" title="function not covered" >setOfCachedUrls(</span>e){r<span class="cstat-no" title="statement not covered" >eturn e.keys().then(f<span class="fstat-no" title="function not covered" >un</span>ction(e){ret<span class="cstat-no" title="statement not covered" >urn e.map(fun<span class="fstat-no" title="function not covered" >ct</span>ion(e){retur<span class="cstat-no" title="statement not covered" >n e.url})}).th</span>en(</span>functio<span class="fstat-no" title="function not covered" >n(</span>e){return ne<span class="cstat-no" title="statement not covered" >w Set(e)})}var prec</span>ach</span>eConfig=[["index.html<span class="cstat-no" title="statement not covered" >","fdeb1ca181fc16e4e320ee37d9028256"],["static/css/main.8715f427.css","689f804b04267140db95b4e87b7d3e56"],["static/js/main.858c8dc2.js","46584226e7b30e176cd24a5e4dd0682c"],["static/media/HoboStd.ea090dd5.otf","ea090dd5bb63809b52e7b06d1b20cadb"],["static/media/Merriweather-Regular.f417c6ec.ttf","f417c6ecc22331e14cdc511a148ae129"],["static/media/glyphicons-halflings-regular.448c34a5.woff2","448c34a56d699c29117adc64c43affeb"],["static/media/glyphicons-halflings-regular.89889688.svg","89889688147bd7575d6327160d64e760"],["static/media/glyphicons-halflings-regular.e18bbf61.ttf","e18bbf611f2a2e43afc071aa2f4e1512"],["static/media/glyphicons-halflings-regular.f4769f9b.eot","f4769f9bdb7466be65088239c12046d1"],["static/media/glyphicons-halflings-regular.fa277232.woff","fa2772327f55d8198301fdb8bcfc8158"]],cacheName="sw-precache-v3-sw-pre</span>cache-webpac<span class="cstat-no" title="statement not covered" >k-plugin-"+(self.registration?self.registration.scope:""),ignoreUrlParametersMatching=[/^utm_/],ad</span>dDirectoryIndex=function(e,t){<span class="cstat-no" title="statement not covered" >var n=new </span>URL(e);return"/"===n<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >.p</span>athname.slice(-1)&amp;&amp;(n.p<span class="cstat-no" title="statement not covered" >athname+=t)<span class="cstat-no" title="statement not covered" ></span>,n.toString()},cleanResponse=function(e){return e.redirected?("body"in e</span>?</span>Promise.resolve(<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >e.</span>body):e.blob<span class="cstat-no" title="statement not covered" >()).then(function(t){return new Response(t,{headers:e.headers,status:e.status,<span class="fstat-no" title="function not covered" >st</span>atusText:e.s<span class="cstat-no" title="statement not covered" >tatusText})}):Promise.resolve(e)},createCacheKey=function(e,t,n,r){var a=new URL(e);return r</span>&amp;&amp;a.pathname.match(r)||(</span>a</span>.search+=(a.searc<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >h?</span>"&amp;":"")+encodeURIComponent(t)<span class="cstat-no" title="statement not covered" >+"="+encode<span class="cstat-no" title="statement not covered" ></span>URIComponent(n)),a.toString()},isPathWhitelisted=function(e,t){if(0===e.length)return!0;var n=new URL(t).pathname;return e.some(function(e){</span>r</span>eturn n.match(e)})},<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >st</span>ripIgnoredUrlPa<span class="cstat-no" title="statement not covered" >rameters=function(e,<span class="cstat-no" title="statement not covered" >t){var n=ne</span></span>w URL(e<span class="cstat-no" title="statement not covered" >);return n.hash="",n<span class="cstat-no" title="statement not covered" ></span>.search=n.sear<span class="fstat-no" title="function not covered" >ch</span>.slice(1).sp<span class="cstat-no" title="statement not covered" >lit("&amp;").map(functi</span>on(</span>e</span>){return e.split("=")}).filt<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >er</span>(function(e){return t.e<span class="cstat-no" title="statement not covered" >very(functi<span class="cstat-no" title="statement not covered" ></span>on(t){return!t.test(e[0])})}).map(function(e){return e.join("=")<span class="fstat-no" title="function not covered" >})</span>.join("&amp;"),n<span class="cstat-no" title="statement not covered" >.toString()},hashPara</span>mName="_s<span class="fstat-no" title="function not covered" >w-</span>precache",ur<span class="cstat-no" title="statement not covered" >lsToCacheKeys=n<span class="fstat-no" title="function not covered" >ew</span> Map(precach<span class="cstat-no" title="statement not covered" >eConfig.map(function(e</span>){v</span>ar t=e<span class="fstat-no" title="function not covered" >[0</span>],n=e[1],r=n<span class="cstat-no" title="statement not covered" >ew URL(t,self.locati</span>on),a=createCacheKey(r,hash</span>P</span>aramName,n,/\.\w<span class="cstat-no" title="statement not covered" >{8}\./);return[</span>r.toString(),a]}))<span class="cstat-no" title="statement not covered" >;self.addEventListener("ins<span class="fstat-no" title="function not covered" >ta</span>ll",function(e){e.wa<span class="cstat-no" title="statement not covered" >itUnt</span>il(c<span class="cstat-no" title="statement not covered" >aches</span>.ope<span class="cstat-no" title="statement not covered" >n(cacheName).then(function</span>(e){<span class="cstat-no" title="statement not covered" >return setOfCachedUrls(e).then(function(t){return<span class="cstat-no" title="statement not covered" ></span> Promise.all(Array.from(ur</span>lsT<span class="cstat-no" title="statement not covered" ></span>oCacheKeys.values()).map(function<span class="fstat-no" title="function not covered" >(n</span>){if(!t.has(<span class="cstat-no" title="statement not covered" >n)){var r=new Request(n,{credentials:"sa<span class="fstat-no" title="function not covered" >me</span>-origin"});r<span class="cstat-no" title="statement not covered" >eturn fetch(r).then(function(t)<span class="fstat-no" title="function not covered" >{i</span>f(!t.ok)thro<span class="cstat-no" title="statement not covered" >w new Error("Request for "+n+" returned a response with stat<span class="fstat-no" title="function not covered" >us</span> "+t.status)<span class="cstat-no" title="statement not covered" >;return cleanResponse(t)<span class="cstat-no" title="statement not covered" >.then(function(t){return e.put(n,t)})})}}))})})<span class="cstat-no" title="statement not covered" ></span>.then(function(){retu<span class="fstat-no" title="function not covered" >rn</span> self.skipWa<span class="cstat-no" title="statement not covered" >iting()}))}<span class="cstat-no" title="statement not covered" >),self.addEventListener("activate",function(e){var t=new Set(urlsToCacheKeys.values()<span class="cstat-no" title="statement not covered" >)</span></span>;e.waitUntil(caches.open(cac<span class="fstat-no" title="function not covered" >he</span>Name).then(f<span class="cstat-no" title="statement not covered" >unction(e){return e.</span>key</span>s()</span>.</span>then</span>(fu</span>nction(<span class="fstat-no" title="function not covered" >n)</span>{return Pro<span class="cstat-no" title="statement not covered" >mise.all(n.map(function(n){</span>if(!</span>t.has(n.url))return e.delete(n)}))})}<span class="fstat-no" title="function not covered" >).</span>then(function(){retu<span class="cstat-no" title="statement not covered" >rn self.clients.claim()}))}),self.<span class="cstat-no" title="statement not covered" ></span>addEventListener("fetch",function(e){if(<span class="fstat-no" title="function not covered" >"G</span>ET"===e.requ<span class="cstat-no" title="statement not covered" >est.method){var t,n=s<span class="fstat-no" title="function not covered" >tr</span>ipIgnoredUrl<span class="cstat-no" title="statement not covered" >Parameters(e.request.url,<span class="fstat-no" title="function not covered" >ig</span>noreUrlParam<span class="cstat-no" title="statement not covered" >etersMatching);t=ur<span class="cstat-no" title="statement not covered" >lsToCacheKeys.has(n)</span></span>;t||</span>(n=</span>addDire<span class="fstat-no" title="function not covered" >ct</span>oryIndex(n,<span class="cstat-no" title="statement not covered" >"index.html"),t=urlsToCacheKe</span>ys.h</span>as(n));!t&amp;&amp;"navigate"===e.request.<span class="fstat-no" title="function not covered" >mo</span>de&amp;&amp;isPathWh<span class="cstat-no" title="statement not covered" >itelisted([],e.request.url)&amp;&amp;(n=new URL("/i<span class="cstat-no" title="statement not covered" >ndex.html",self.location).toString(),t=urlsToCacheKeys.has(n)),t&amp;&amp;e.re<span class="cstat-no" title="statement not covered" ></span>spondWith(caches.open(cache<span class="cstat-no" title="statement not covered" >N</span>ame).then(function(e){return e.match(urlsToCacheKeys.get(n)).then(functio<span class="cstat-no" title="statement not covered" >n</span>(e){if(e)return e;throw Error("The cached response that was expected is missing.")})}).catch(function(t){return console.warn('Couldn\'t serve response for "%s" from cache: %O',e.request.url,t),fetch(e.request)<span class="fstat-no" title="function not covered" >})</span>)}});<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span></span></span></span></span></span></span></pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Jun 05 2017 12:17:50 GMT+0100 (BST)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

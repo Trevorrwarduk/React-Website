@@ -8,15 +8,31 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "test-coverage": "react-scripts test --env=jsdom --coverage",
     "eject": "react-scripts eject"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.js",
+      "!**/node_modules/**",
+      "!**/vendor/**",
+      "!**/build/**",
+      "!**/scripts/**",
+      "!**/config/**",
+      "!**/coverage/**",
+      "!**/__tests__/**"
+    ]
   },
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-markdown": "^2.5.0",
-    "react-router-dom": "^4.1.1"
+    "react-router-dom": "^4.1.1",
+    "react-test-renderer": "^15.5.4"
   },
   "devDependencies": {
+    "enzyme": "^2.8.2",
+    "jest-enzyme": "^3.2.0",
     "react-scripts": "0.9.5"
   }
 }
