@@ -8,7 +8,7 @@ class MenuItem extends React.Component {
     return (
       <div className="menuItem">
         <img className="icon" src={menuIcon} alt={this.props.altText}/>
-        <div className="iconText greenColor">{this.props.title}</div>
+        <div className="iconText">{this.props.title}</div>
       </div>
     )
   }

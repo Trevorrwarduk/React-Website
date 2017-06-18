@@ -1,0 +1,1013 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for scripts/start.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">All files</a> / <a href="index.html">scripts</a> start.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/120</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/60</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/17</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/118</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305
+306
+307
+308
+309
+310
+311
+312
+313
+314
+315
+316
+317</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
+&nbsp;
+<span class="cstat-no" title="statement not covered" >process.env.NODE_ENV = 'development';</span>
+&nbsp;
+// Load environment variables from .env file. Suppress warnings using silent
+// if this file is missing. dotenv will never modify any environment variables
+// that have already been set.
+// https://github.com/motdotla/dotenv
+<span class="cstat-no" title="statement not covered" >require('dotenv').config({silent: true});</span>
+&nbsp;
+var chalk = <span class="cstat-no" title="statement not covered" >require('chalk');</span>
+var webpack = <span class="cstat-no" title="statement not covered" >require('webpack');</span>
+var WebpackDevServer = <span class="cstat-no" title="statement not covered" >require('webpack-dev-server');</span>
+var historyApiFallback = <span class="cstat-no" title="statement not covered" >require('connect-history-api-fallback');</span>
+var httpProxyMiddleware = <span class="cstat-no" title="statement not covered" >require('http-proxy-middleware');</span>
+var detect = <span class="cstat-no" title="statement not covered" >require('detect-port');</span>
+var clearConsole = <span class="cstat-no" title="statement not covered" >require('react-dev-utils/clearConsole');</span>
+var checkRequiredFiles = <span class="cstat-no" title="statement not covered" >require('react-dev-utils/checkRequiredFiles');</span>
+var formatWebpackMessages = <span class="cstat-no" title="statement not covered" >require('react-dev-utils/formatWebpackMessages');</span>
+var getProcessForPort = <span class="cstat-no" title="statement not covered" >require('react-dev-utils/getProcessForPort');</span>
+var openBrowser = <span class="cstat-no" title="statement not covered" >require('react-dev-utils/openBrowser');</span>
+var prompt = <span class="cstat-no" title="statement not covered" >require('react-dev-utils/prompt');</span>
+var fs = <span class="cstat-no" title="statement not covered" >require('fs');</span>
+var config = <span class="cstat-no" title="statement not covered" >require('../config/webpack.config.dev');</span>
+var paths = <span class="cstat-no" title="statement not covered" >require('../config/paths');</span>
+&nbsp;
+var useYarn = <span class="cstat-no" title="statement not covered" >fs.existsSync(paths.yarnLockFile);</span>
+var cli = <span class="cstat-no" title="statement not covered" >useYarn ? 'yarn' : 'npm';</span>
+var isInteractive = <span class="cstat-no" title="statement not covered" >process.stdout.isTTY;</span>
+&nbsp;
+// Warn and crash if required files are missing
+<span class="cstat-no" title="statement not covered" >if (!checkRequiredFiles([paths.appHtml, paths.appIndexJs])) {</span>
+<span class="cstat-no" title="statement not covered" >  process.exit(1);</span>
+}
+&nbsp;
+// Tools like Cloud9 rely on this.
+var DEFAULT_PORT = <span class="cstat-no" title="statement not covered" >parseInt(process.env.PORT, 10) || 3000;</span>
+var compiler;
+var handleCompile;
+&nbsp;
+// You can safely remove this after ejecting.
+// We only use this block for testing of Create React App itself:
+var isSmokeTest = <span class="cstat-no" title="statement not covered" >process.argv.some(<span class="fstat-no" title="function not covered" >ar</span>g =&gt; <span class="cstat-no" title="statement not covered" >arg.indexOf('--smoke-test') &gt; -1)</span>;</span>
+<span class="cstat-no" title="statement not covered" >if (isSmokeTest) {</span>
+<span class="cstat-no" title="statement not covered" >  handleCompile = <span class="fstat-no" title="function not covered" >fu</span>nction (err, stats) {</span>
+<span class="cstat-no" title="statement not covered" >    if (err || stats.hasErrors() || stats.hasWarnings()) {</span>
+<span class="cstat-no" title="statement not covered" >      process.exit(1);</span>
+    } else {
+<span class="cstat-no" title="statement not covered" >      process.exit(0);</span>
+    }
+  };
+}
+&nbsp;
+function <span class="fstat-no" title="function not covered" >setupCompiler(</span>host, port, protocol) {
+  // "Compiler" is a low-level interface to Webpack.
+  // It lets us listen to some events and provide our own custom messages.
+<span class="cstat-no" title="statement not covered" >  compiler = webpack(config, handleCompile);</span>
+&nbsp;
+  // "invalid" event fires when you have changed a file, and Webpack is
+  // recompiling a bundle. WebpackDevServer takes care to pause serving the
+  // bundle, so if you refresh, it'll wait instead of serving the old one.
+  // "invalid" is short for "bundle invalidated", it doesn't imply any errors.
+<span class="cstat-no" title="statement not covered" >  compiler.plugin('invalid', <span class="fstat-no" title="function not covered" >fu</span>nction() {</span>
+<span class="cstat-no" title="statement not covered" >    if (isInteractive) {</span>
+<span class="cstat-no" title="statement not covered" >      clearConsole();</span>
+    }
+<span class="cstat-no" title="statement not covered" >    console.log('Compiling...');</span>
+  });
+&nbsp;
+  var isFirstCompile = <span class="cstat-no" title="statement not covered" >true;</span>
+&nbsp;
+  // "done" event fires when Webpack has finished recompiling the bundle.
+  // Whether or not you have warnings or errors, you will get this event.
+<span class="cstat-no" title="statement not covered" >  compiler.plugin('done', <span class="fstat-no" title="function not covered" >fu</span>nction(stats) {</span>
+<span class="cstat-no" title="statement not covered" >    if (isInteractive) {</span>
+<span class="cstat-no" title="statement not covered" >      clearConsole();</span>
+    }
+&nbsp;
+    // We have switched off the default Webpack output in WebpackDevServer
+    // options so we are going to "massage" the warnings and errors and present
+    // them in a readable focused way.
+    var messages = <span class="cstat-no" title="statement not covered" >formatWebpackMessages(stats.toJson({}, true));</span>
+    var isSuccessful = <span class="cstat-no" title="statement not covered" >!messages.errors.length &amp;&amp; !messages.warnings.length;</span>
+    var showInstructions = <span class="cstat-no" title="statement not covered" >isSuccessful &amp;&amp; (isInteractive || isFirstCompile);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    if (isSuccessful) {</span>
+<span class="cstat-no" title="statement not covered" >      console.log(chalk.green('Compiled successfully!'));</span>
+    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    if (showInstructions) {</span>
+<span class="cstat-no" title="statement not covered" >      console.log();</span>
+<span class="cstat-no" title="statement not covered" >      console.log('The app is running at:');</span>
+<span class="cstat-no" title="statement not covered" >      console.log();</span>
+<span class="cstat-no" title="statement not covered" >      console.log('  ' + chalk.cyan(protocol + '://' + host + ':' + port + '/'));</span>
+<span class="cstat-no" title="statement not covered" >      console.log();</span>
+<span class="cstat-no" title="statement not covered" >      console.log('Note that the development build is not optimized.');</span>
+<span class="cstat-no" title="statement not covered" >      console.log('To create a production build, use ' + chalk.cyan(cli + ' run build') + '.');</span>
+<span class="cstat-no" title="statement not covered" >      console.log();</span>
+<span class="cstat-no" title="statement not covered" >      isFirstCompile = false;</span>
+    }
+&nbsp;
+    // If errors exist, only show errors.
+<span class="cstat-no" title="statement not covered" >    if (messages.errors.length) {</span>
+<span class="cstat-no" title="statement not covered" >      console.log(chalk.red('Failed to compile.'));</span>
+<span class="cstat-no" title="statement not covered" >      console.log();</span>
+<span class="cstat-no" title="statement not covered" >      messages.errors.forEach(<span class="fstat-no" title="function not covered" >me</span>ssage =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >        console.log(message);</span>
+<span class="cstat-no" title="statement not covered" >        console.log();</span>
+      });
+<span class="cstat-no" title="statement not covered" >      return;</span>
+    }
+&nbsp;
+    // Show warnings if no errors were found.
+<span class="cstat-no" title="statement not covered" >    if (messages.warnings.length) {</span>
+<span class="cstat-no" title="statement not covered" >      console.log(chalk.yellow('Compiled with warnings.'));</span>
+<span class="cstat-no" title="statement not covered" >      console.log();</span>
+<span class="cstat-no" title="statement not covered" >      messages.warnings.forEach(<span class="fstat-no" title="function not covered" >me</span>ssage =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >        console.log(message);</span>
+<span class="cstat-no" title="statement not covered" >        console.log();</span>
+      });
+      // Teach some ESLint tricks.
+<span class="cstat-no" title="statement not covered" >      console.log('You may use special comments to disable some warnings.');</span>
+<span class="cstat-no" title="statement not covered" >      console.log('Use ' + chalk.yellow('// eslint-disable-next-line') + ' to ignore the next line.');</span>
+<span class="cstat-no" title="statement not covered" >      console.log('Use ' + chalk.yellow('/* eslint-disable */') + ' to ignore all warnings in a file.');</span>
+    }
+  });
+}
+&nbsp;
+// We need to provide a custom onError function for httpProxyMiddleware.
+// It allows us to log custom error messages on the console.
+function <span class="fstat-no" title="function not covered" >onProxyError(</span>proxy) {
+<span class="cstat-no" title="statement not covered" >  return <span class="fstat-no" title="function not covered" >fu</span>nction(err, req, res){</span>
+    var host = <span class="cstat-no" title="statement not covered" >req.headers &amp;&amp; req.headers.host;</span>
+<span class="cstat-no" title="statement not covered" >    console.log(</span>
+      chalk.red('Proxy error:') + ' Could not proxy request ' + chalk.cyan(req.url) +
+      ' from ' + chalk.cyan(host) + ' to ' + chalk.cyan(proxy) + '.'
+    );
+<span class="cstat-no" title="statement not covered" >    console.log(</span>
+      'See https://nodejs.org/api/errors.html#errors_common_system_errors for more information (' +
+      chalk.cyan(err.code) + ').'
+    );
+<span class="cstat-no" title="statement not covered" >    console.log();</span>
+&nbsp;
+    // And immediately send the proper error response to the client.
+    // Otherwise, the request will eventually timeout with ERR_EMPTY_RESPONSE on the client side.
+<span class="cstat-no" title="statement not covered" >    if (res.writeHead &amp;&amp; !res.headersSent) {</span>
+<span class="cstat-no" title="statement not covered" >        res.writeHead(500)</span>;
+    }
+<span class="cstat-no" title="statement not covered" >    res.end('Proxy error: Could not proxy request ' + req.url + ' from ' +</span>
+      host + ' to ' + proxy + ' (' + err.code + ').'
+    );
+  }
+}
+&nbsp;
+function <span class="fstat-no" title="function not covered" >addMiddleware(</span>devServer) {
+  // `proxy` lets you to specify a fallback server during development.
+  // Every unrecognized request will be forwarded to it.
+  var proxy = <span class="cstat-no" title="statement not covered" >require(paths.appPackageJson).proxy;</span>
+<span class="cstat-no" title="statement not covered" >  devServer.use(historyApiFallback({</span>
+    // Paths with dots should still use the history fallback.
+    // See https://github.com/facebookincubator/create-react-app/issues/387.
+    disableDotRule: true,
+    // For single page apps, we generally want to fallback to /index.html.
+    // However we also want to respect `proxy` for API calls.
+    // So if `proxy` is specified, we need to decide which fallback to use.
+    // We use a heuristic: if request `accept`s text/html, we pick /index.html.
+    // Modern browsers include text/html into `accept` header when navigating.
+    // However API calls like `fetch()` won’t generally accept text/html.
+    // If this heuristic doesn’t work well for you, don’t use `proxy`.
+    htmlAcceptHeaders: proxy ?
+      ['text/html'] :
+      ['text/html', '*/*']
+  }));
+<span class="cstat-no" title="statement not covered" >  if (proxy) {</span>
+<span class="cstat-no" title="statement not covered" >    if (typeof proxy !== 'string') {</span>
+<span class="cstat-no" title="statement not covered" >      console.log(chalk.red('When specified, "proxy" in package.json must be a string.'));</span>
+<span class="cstat-no" title="statement not covered" >      console.log(chalk.red('Instead, the type of "proxy" was "' + typeof proxy + '".'));</span>
+<span class="cstat-no" title="statement not covered" >      console.log(chalk.red('Either remove "proxy" from package.json, or make it a string.'));</span>
+<span class="cstat-no" title="statement not covered" >      process.exit(1);</span>
+    }
+&nbsp;
+    // Otherwise, if proxy is specified, we will let it handle any request.
+    // There are a few exceptions which we won't send to the proxy:
+    // - /index.html (served as HTML5 history API fallback)
+    // - /*.hot-update.json (WebpackDevServer uses this too for hot reloading)
+    // - /sockjs-node/* (WebpackDevServer uses this for hot reloading)
+    // Tip: use https://jex.im/regulex/ to visualize the regex
+    var mayProxy = <span class="cstat-no" title="statement not covered" >/^(?!\/(index\.html$|.*\.hot-update\.json$|sockjs-node\/)).*$/;</span>
+&nbsp;
+    // Pass the scope regex both to Express and to the middleware for proxying
+    // of both HTTP and WebSockets to work without false positives.
+    var hpm = <span class="cstat-no" title="statement not covered" >httpProxyMiddleware(<span class="fstat-no" title="function not covered" >pa</span>thname =&gt; <span class="cstat-no" title="statement not covered" >mayProxy.test(pathname),</span> {</span>
+      target: proxy,
+      logLevel: 'silent',
+      onProxyReq: <span class="fstat-no" title="function not covered" >fu</span>nction(proxyReq) {
+        // Browers may send Origin headers even with same-origin
+        // requests. To prevent CORS issues, we have to change
+        // the Origin to match the target URL.
+<span class="cstat-no" title="statement not covered" >        if (proxyReq.getHeader('origin')) {</span>
+<span class="cstat-no" title="statement not covered" >          proxyReq.setHeader('origin', proxy);</span>
+        }
+      },
+      onError: onProxyError(proxy),
+      secure: false,
+      changeOrigin: true,
+      ws: true,
+      xfwd: true
+    });
+<span class="cstat-no" title="statement not covered" >    devServer.use(mayProxy, hpm);</span>
+&nbsp;
+    // Listen for the websocket 'upgrade' event and upgrade the connection.
+    // If this is not done, httpProxyMiddleware will not try to upgrade until
+    // an initial plain HTTP request is made.
+<span class="cstat-no" title="statement not covered" >    devServer.listeningApp.on('upgrade', hpm.upgrade);</span>
+  }
+&nbsp;
+  // Finally, by now we have certainly resolved the URL.
+  // It may be /index.html, so let the dev server try serving it again.
+<span class="cstat-no" title="statement not covered" >  devServer.use(devServer.middleware);</span>
+}
+&nbsp;
+function <span class="fstat-no" title="function not covered" >runDevServer(</span>host, port, protocol) {
+  var devServer = <span class="cstat-no" title="statement not covered" >new WebpackDevServer(compiler, {</span>
+    // Enable gzip compression of generated files.
+    compress: true,
+    // Silence WebpackDevServer's own logs since they're generally not useful.
+    // It will still show compile warnings and errors with this setting.
+    clientLogLevel: 'none',
+    // By default WebpackDevServer serves physical files from current directory
+    // in addition to all the virtual build products that it serves from memory.
+    // This is confusing because those files won’t automatically be available in
+    // production build folder unless we copy them. However, copying the whole
+    // project directory is dangerous because we may expose sensitive files.
+    // Instead, we establish a convention that only files in `public` directory
+    // get served. Our build script will copy `public` into the `build` folder.
+    // In `index.html`, you can get URL of `public` folder with %PUBLIC_URL%:
+    // &lt;link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico"&gt;
+    // In JavaScript code, you can access it with `process.env.PUBLIC_URL`.
+    // Note that we only recommend to use `public` folder as an escape hatch
+    // for files like `favicon.ico`, `manifest.json`, and libraries that are
+    // for some reason broken when imported through Webpack. If you just want to
+    // use an image, put it in `src` and `import` it from JavaScript instead.
+    contentBase: paths.appPublic,
+    // Enable hot reloading server. It will provide /sockjs-node/ endpoint
+    // for the WebpackDevServer client so it can learn when the files were
+    // updated. The WebpackDevServer client is included as an entry point
+    // in the Webpack development configuration. Note that only changes
+    // to CSS are currently hot reloaded. JS changes will refresh the browser.
+    hot: true,
+    // It is important to tell WebpackDevServer to use the same "root" path
+    // as we specified in the config. In development, we always serve from /.
+    publicPath: config.output.publicPath,
+    // WebpackDevServer is noisy by default so we emit custom message instead
+    // by listening to the compiler events with `compiler.plugin` calls above.
+    quiet: true,
+    // Reportedly, this avoids CPU overload on some systems.
+    // https://github.com/facebookincubator/create-react-app/issues/293
+    watchOptions: {
+      ignored: /node_modules/
+    },
+    // Enable HTTPS if the HTTPS environment variable is set to 'true'
+    https: protocol === "https",
+    host: host
+  });
+&nbsp;
+  // Our custom middleware proxies requests to /index.html or a remote API.
+<span class="cstat-no" title="statement not covered" >  addMiddleware(devServer);</span>
+&nbsp;
+  // Launch WebpackDevServer.
+<span class="cstat-no" title="statement not covered" >  devServer.listen(port, <span class="fstat-no" title="function not covered" >er</span>r =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    if (err) {</span>
+<span class="cstat-no" title="statement not covered" >      return console.log(err);</span>
+    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    if (isInteractive) {</span>
+<span class="cstat-no" title="statement not covered" >      clearConsole();</span>
+    }
+<span class="cstat-no" title="statement not covered" >    console.log(chalk.cyan('Starting the development server...'));</span>
+<span class="cstat-no" title="statement not covered" >    console.log();</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    openBrowser(protocol + '://' + host + ':' + port + '/');</span>
+  });
+}
+&nbsp;
+function <span class="fstat-no" title="function not covered" >run(</span>port) {
+  var protocol = <span class="cstat-no" title="statement not covered" >process.env.HTTPS === 'true' ? "https" : "http";</span>
+  var host = <span class="cstat-no" title="statement not covered" >process.env.HOST || 'localhost';</span>
+<span class="cstat-no" title="statement not covered" >  setupCompiler(host, port, protocol);</span>
+<span class="cstat-no" title="statement not covered" >  runDevServer(host, port, protocol);</span>
+}
+&nbsp;
+// We attempt to use the default port but if it is busy, we offer the user to
+// run on a different port. `detect()` Promise resolves to the next free port.
+<span class="cstat-no" title="statement not covered" >detect(DEFAULT_PORT).then(<span class="fstat-no" title="function not covered" >po</span>rt =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >  if (port === DEFAULT_PORT) {</span>
+<span class="cstat-no" title="statement not covered" >    run(port);</span>
+<span class="cstat-no" title="statement not covered" >    return;</span>
+  }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  if (isInteractive) {</span>
+<span class="cstat-no" title="statement not covered" >    clearConsole();</span>
+    var existingProcess = <span class="cstat-no" title="statement not covered" >getProcessForPort(DEFAULT_PORT);</span>
+    var question =
+<span class="cstat-no" title="statement not covered" >      chalk.yellow('Something is already running on port ' + DEFAULT_PORT + '.' +</span>
+        ((existingProcess) ? ' Probably:\n  ' + existingProcess : '')) +
+        '\n\nWould you like to run the app on another port instead?';
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    prompt(question, true).then(<span class="fstat-no" title="function not covered" >sh</span>ouldChangePort =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      if (shouldChangePort) {</span>
+<span class="cstat-no" title="statement not covered" >        run(port);</span>
+      }
+    });
+  } else {
+<span class="cstat-no" title="statement not covered" >    console.log(chalk.red('Something is already running on port ' + DEFAULT_PORT + '.'));</span>
+  }
+});
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Jun 05 2017 12:20:20 GMT+0100 (BST)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

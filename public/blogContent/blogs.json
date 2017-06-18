@@ -16,14 +16,14 @@
     {
       "title":        "Atom Up & Running",
       "file":         "blog002.md",
-      "date":         "February 9th 2017",
+      "date":         "Feb 9th 2017",
       "sortDate":     "20170209",
       "author":       "Trevor Ward"
     },
     {
-      "title":        "Titanium CommonJS Introduction",
+      "title":        "Titanium CommonJS Intro",
       "file":         "blog003.md",
-      "date":         "October 12th 2012",
+      "date":         "Oct 12th 2012",
       "sortDate":     "20121012",
       "author":       "Trevor Ward"
     }

@@ -87,15 +87,12 @@ class Blog extends React.Component {
 
     fetch(jsonFile)
       .then((response) => {
-        console.log("IM FETCHING");
         return response.json();
       })
       .then((json) => {
-        console.log("I FETCHED");
         this.setupBlogData(json);
       })
       .catch((ex) => {
-        console.log('I FAILED :( ' + ex);
         this.setState({
           errorHandler:     true,
         })

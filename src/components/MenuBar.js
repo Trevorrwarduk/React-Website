@@ -9,25 +9,25 @@ class MenuBar extends React.Component {
       <div className="menuBar floatLeft">
         <NavLink className="floatLeft" exact to='/'>
           <MenuItem
-            image='home.png'
+            image='home2.png'
             title="Home"
             altText='Home Menu'/>
         </NavLink>
         <NavLink className="floatLeft" exact to='/projects'>
           <MenuItem
-            image='projects.png'
+            image='projects2.png'
             title="Projects"
             altText='Projects Menu'/>
         </NavLink>
         <NavLink className="floatLeft" exact to='/me'>
           <MenuItem
-            image='me.png'
+            image='me2.png'
             title="Me"
             altText='Me Menu'/>
         </NavLink>
         <NavLink className="floatLeft" exact to='/blog'>
           <MenuItem
-            image='blog.png'
+            image='blog2.png'
             title="Blog"
             altText='Blog Menu'/>
         </NavLink>

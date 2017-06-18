@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1496667922145" clover="3.2.0">
+  <project timestamp="1496667922145" name="All files">
+    <metrics statements="139" coveredstatements="18" conditionals="16" coveredconditionals="5" methods="40" coveredmethods="4" elements="195" coveredelements="27" complexity="0" loc="139" ncloc="139" packages="2" files="17" classes="17">
+      <package name="src">
+        <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <file name="index.js" path="/Users/untward/trevorRWarduk/ReactWebsite/trevorrwarduk/src/index.js">
+          <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="0" type="stmt"/>
+          <line num="2" count="0" type="stmt"/>
+          <line num="3" count="0" type="stmt"/>
+          <line num="5" count="0" type="stmt"/>
+          <line num="6" count="0" type="stmt"/>
+          <line num="8" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="src.components">
+        <metrics statements="133" coveredstatements="18" conditionals="16" coveredconditionals="5" methods="40" coveredmethods="4"/>
+        <file name="App.js" path="/Users/untward/trevorRWarduk/ReactWebsite/trevorrwarduk/src/components/App.js">
+          <metrics statements="16" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="1" count="0" type="stmt"/>
+          <line num="2" count="0" type="stmt"/>
+          <line num="3" count="0" type="stmt"/>
+          <line num="4" count="0" type="stmt"/>
+          <line num="5" count="0" type="stmt"/>
+          <line num="6" count="0" type="stmt"/>
+          <line num="8" count="0" type="stmt"/>
+          <line num="9" count="0" type="stmt"/>
+          <line num="10" count="0" type="stmt"/>
+          <line num="11" count="0" type="stmt"/>
+          <line num="12" count="0" type="stmt"/>
+          <line num="13" count="0" type="stmt"/>
+          <line num="14" count="0" type="stmt"/>
+          <line num="15" count="0" type="stmt"/>
+          <line num="19" count="0" type="stmt"/>
+          <line num="51" count="0" type="stmt"/>
+        </file>
+        <file name="Blog.js" path="/Users/untward/trevorRWarduk/ReactWebsite/trevorrwarduk/src/components/Blog.js">
+          <metrics statements="37" coveredstatements="13" conditionals="10" coveredconditionals="5" methods="12" coveredmethods="4"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="10" count="1" type="stmt"/>
+          <line num="12" count="1" type="stmt"/>
+          <line num="23" count="1" type="stmt"/>
+          <line num="24" count="1" type="stmt"/>
+          <line num="25" count="1" type="stmt"/>
+          <line num="28" count="0" type="stmt"/>
+          <line num="39" count="0" type="stmt"/>
+          <line num="47" count="0" type="stmt"/>
+          <line num="55" count="0" type="stmt"/>
+          <line num="57" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="58" count="0" type="stmt"/>
+          <line num="59" count="0" type="stmt"/>
+          <line num="60" count="0" type="stmt"/>
+          <line num="61" count="0" type="stmt"/>
+          <line num="62" count="0" type="stmt"/>
+          <line num="64" count="0" type="stmt"/>
+          <line num="65" count="0" type="stmt"/>
+          <line num="67" count="0" type="stmt"/>
+          <line num="68" count="0" type="stmt"/>
+          <line num="70" count="0" type="stmt"/>
+          <line num="71" count="0" type="stmt"/>
+          <line num="72" count="0" type="stmt"/>
+          <line num="73" count="0" type="stmt"/>
+          <line num="74" count="0" type="stmt"/>
+          <line num="77" count="0" type="stmt"/>
+          <line num="86" count="1" type="stmt"/>
+          <line num="88" count="1" type="stmt"/>
+          <line num="90" count="0" type="stmt"/>
+          <line num="93" count="0" type="stmt"/>
+          <line num="96" count="1" type="stmt"/>
+          <line num="102" count="2" type="stmt"/>
+          <line num="112" count="0" type="stmt"/>
+          <line num="128" count="0" type="stmt"/>
+          <line num="160" count="1" type="stmt"/>
+        </file>
+        <file name="Header.js" path="/Users/untward/trevorRWarduk/ReactWebsite/trevorrwarduk/src/components/Header.js">
+          <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="1" count="0" type="stmt"/>
+          <line num="5" count="0" type="stmt"/>
+          <line num="17" count="0" type="stmt"/>
+        </file>
+        <file name="HeadingSection.js" path="/Users/untward/trevorRWarduk/ReactWebsite/trevorrwarduk/src/components/HeadingSection.js">
+          <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="1" count="0" type="stmt"/>
+          <line num="3" count="0" type="stmt"/>
+          <line num="4" count="0" type="stmt"/>
+          <line num="5" count="0" type="stmt"/>
+          <line num="9" count="0" type="stmt"/>
+          <line num="26" count="0" type="stmt"/>
+        </file>
+        <file name="Home.js" path="/Users/untward/trevorRWarduk/ReactWebsite/trevorrwarduk/src/components/Home.js">
+          <metrics statements="12" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="7" coveredmethods="0"/>
+          <line num="1" count="0" type="stmt"/>
+          <line num="3" count="0" type="stmt"/>
+          <line num="7" count="0" type="stmt"/>
+          <line num="9" count="0" type="stmt"/>
+          <line num="13" count="0" type="stmt"/>
+          <line num="16" count="0" type="stmt"/>
+          <line num="21" count="0" type="stmt"/>
+          <line num="23" count="0" type="stmt"/>
+          <line num="26" count="0" type="stmt"/>
+          <line num="29" count="0" type="stmt"/>
+          <line num="35" count="0" type="stmt"/>
+          <line num="54" count="0" type="stmt"/>
+        </file>
+        <file name="MDLoader.js" path="/Users/untward/trevorRWarduk/ReactWebsite/trevorrwarduk/src/components/MDLoader.js">
+          <metrics statements="15" coveredstatements="5" conditionals="4" coveredconditionals="0" methods="8" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="2" count="1" type="stmt"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="8" count="0" type="stmt"/>
+          <line num="10" count="0" type="stmt"/>
+          <line num="14" count="0" type="stmt"/>
+          <line num="17" count="0" type="stmt"/>
+          <line num="20" count="0" type="stmt"/>
+          <line num="23" count="0" type="stmt"/>
+          <line num="25" count="0" type="stmt"/>
+          <line num="28" count="0" type="stmt"/>
+          <line num="33" count="0" type="stmt"/>
+          <line num="39" count="0" type="stmt"/>
+          <line num="55" count="1" type="stmt"/>
+          <line num="59" count="1" type="stmt"/>
+        </file>
+        <file name="Me.js" path="/Users/untward/trevorRWarduk/ReactWebsite/trevorrwarduk/src/components/Me.js">
+          <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="1" count="0" type="stmt"/>
+          <line num="2" count="0" type="stmt"/>
+          <line num="6" count="0" type="stmt"/>
+          <line num="14" count="0" type="stmt"/>
+        </file>
+        <file name="MenuBar.js" path="/Users/untward/trevorRWarduk/ReactWebsite/trevorrwarduk/src/components/MenuBar.js">
+          <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="1" count="0" type="stmt"/>
+          <line num="2" count="0" type="stmt"/>
+          <line num="4" count="0" type="stmt"/>
+          <line num="8" count="0" type="stmt"/>
+          <line num="39" count="0" type="stmt"/>
+        </file>
+        <file name="MenuItem.js" path="/Users/untward/trevorRWarduk/ReactWebsite/trevorrwarduk/src/components/MenuItem.js">
+          <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="1" count="0" type="stmt"/>
+          <line num="2" count="0" type="stmt"/>
+          <line num="6" count="0" type="stmt"/>
+          <line num="8" count="0" type="stmt"/>
+          <line num="17" count="0" type="stmt"/>
+          <line num="23" count="0" type="stmt"/>
+        </file>
+        <file name="NotFound.js" path="/Users/untward/trevorRWarduk/ReactWebsite/trevorrwarduk/src/components/NotFound.js">
+          <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="1" count="0" type="stmt"/>
+          <line num="5" count="0" type="stmt"/>
+          <line num="16" count="0" type="stmt"/>
+        </file>
+        <file name="Projects.js" path="/Users/untward/trevorRWarduk/ReactWebsite/trevorrwarduk/src/components/Projects.js">
+          <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="1" count="0" type="stmt"/>
+          <line num="2" count="0" type="stmt"/>
+          <line num="6" count="0" type="stmt"/>
+          <line num="14" count="0" type="stmt"/>
+        </file>
+        <file name="RightSideBar.js" path="/Users/untward/trevorRWarduk/ReactWebsite/trevorrwarduk/src/components/RightSideBar.js">
+          <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="1" count="0" type="stmt"/>
+          <line num="3" count="0" type="stmt"/>
+          <line num="7" count="0" type="stmt"/>
+          <line num="24" count="0" type="stmt"/>
+        </file>
+        <file name="SideImage.js" path="/Users/untward/trevorRWarduk/ReactWebsite/trevorrwarduk/src/components/SideImage.js">
+          <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="1" count="0" type="stmt"/>
+          <line num="2" count="0" type="stmt"/>
+          <line num="6" count="0" type="stmt"/>
+          <line num="17" count="0" type="stmt"/>
+          <line num="22" count="0" type="stmt"/>
+        </file>
+        <file name="SocialBar.js" path="/Users/untward/trevorRWarduk/ReactWebsite/trevorrwarduk/src/components/SocialBar.js">
+          <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="1" count="0" type="stmt"/>
+          <line num="3" count="0" type="stmt"/>
+          <line num="7" count="0" type="stmt"/>
+          <line num="46" count="0" type="stmt"/>
+        </file>
+        <file name="SocialItem.js" path="/Users/untward/trevorRWarduk/ReactWebsite/trevorrwarduk/src/components/SocialItem.js">
+          <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="1" count="0" type="stmt"/>
+          <line num="2" count="0" type="stmt"/>
+          <line num="6" count="0" type="stmt"/>
+          <line num="8" count="0" type="stmt"/>
+          <line num="19" count="0" type="stmt"/>
+          <line num="25" count="0" type="stmt"/>
+        </file>
+        <file name="StrapLine.js" path="/Users/untward/trevorRWarduk/ReactWebsite/trevorrwarduk/src/components/StrapLine.js">
+          <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="1" count="0" type="stmt"/>
+          <line num="5" count="0" type="stmt"/>
+          <line num="13" count="0" type="stmt"/>
+        </file>
+      </package>
+    </metrics>
+  </project>
+</coverage>
