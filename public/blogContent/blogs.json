@@ -1,11 +1,18 @@
 {
   "categories": [
-    {"title": "All",          "posts": [0, 1, 2]},
-    {"title": "Atom",         "posts": [1]},
-    {"title": "Appcelerator", "posts": [2]},
-    {"title": "JavaScript",   "posts": [1, 2]}
+    {"title": "All",          "posts": [0, 1, 2, 3]},
+    {"title": "Atom",         "posts": [2]},
+    {"title": "Appcelerator", "posts": [3]},
+    {"title": "JavaScript",   "posts": [0, 2, 3]}
   ],
   "posts": [
+    {
+      "title":        "ReactJS So Far",
+      "file":         "blog004.md",
+      "date":         "July 10th 2017",
+      "sortDate":     "20170710",
+      "author":        "Trevor Ward"
+    },
     {
       "title":        "The New Website",
       "file":         "blog001.md",
