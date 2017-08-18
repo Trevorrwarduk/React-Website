@@ -31,6 +31,12 @@ class MenuBar extends React.Component {
             title="Blog"
             altText='Blog Menu'/>
         </NavLink>
+        <NavLink className="floatLeft" exact to='/runningblog'>
+          <MenuItem
+            image='rblog.png'
+            title="Run Blog"
+            altText='Running Blog Menu'/>
+        </NavLink>
       </div>
     )
   }

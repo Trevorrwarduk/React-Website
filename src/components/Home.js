@@ -18,7 +18,7 @@ class Home extends React.Component {
     })
   }
   componentWillMount() {
-    fetch('/blogContent/blogs.json')
+    fetch('/blogContent/showpost.json')
       .then((response) => {
         return response.json();
       })

@@ -1,0 +1,14 @@
+{
+  "categories": [
+    {"title": "All",          "posts": [0]}
+  ],
+  "posts": [
+    {
+      "title":        "The First Few Steps",
+      "file":         "rblog001.md",
+      "date":         "August 17th 2017",
+      "sortDate":     "20170817",
+      "author":        "Trevor Ward"
+    }
+  ]
+}
