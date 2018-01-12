@@ -1,8 +1,22 @@
 {
   "categories": [
-    {"title": "All",          "posts": [0]}
+    {"title": "All",          "posts": [0, 1, 2]}
   ],
   "posts": [
+    {
+      "title":        "3 Months Injured",
+      "file":         "rblog003.md",
+      "date":         "January 10th 2018",
+      "sortDate":     "20180110",
+      "author":       "Trevor Ward"
+    },
+    {
+      "title":        "My First Parkrun",
+      "file":         "rblog002.md",
+      "date":         "September 3rd 2017",
+      "sortDate":     "20170903",
+      "author":       "Trevor Ward"
+    },
     {
       "title":        "The First Few Steps",
       "file":         "rblog001.md",

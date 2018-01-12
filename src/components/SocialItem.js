@@ -10,7 +10,7 @@ class SocialItem extends React.Component {
         <img className="socialIcon blueBack circleRadius"
              src={menuIcon}
              alt={this.props.altText}/>
-        <div className="socialText orangeColor">{this.props.title}</div>
+        <div className="socialText DGreenColor">{this.props.title}</div>
       </div>
     )
   }
