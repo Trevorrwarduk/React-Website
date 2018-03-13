@@ -1,44 +1,37 @@
-var React                 = require('react');
-var NavLink               = require('react-router-dom').NavLink;
+var React = require("react");
+var NavLink = require("react-router-dom").NavLink;
 
-var MenuItem              = require('./MenuItem');
+var MenuItem = require("./MenuItem");
 
 class MenuBar extends React.Component {
   render() {
     return (
       <div className="menuBar floatLeft">
-        <NavLink className="floatLeft" exact to='/'>
-          <MenuItem
-            image='home2.png'
-            title="Home"
-            altText='Home Menu'/>
+        <NavLink className="floatLeft" exact to="/">
+          <MenuItem image="home2.png" title="Home" altText="Home Menu" />
         </NavLink>
-        <NavLink className="floatLeft" exact to='/projects'>
+        <NavLink className="floatLeft" exact to="/projects">
           <MenuItem
-            image='projects2.png'
+            image="projects2.png"
             title="Projects"
-            altText='Projects Menu'/>
+            altText="Projects Menu"
+          />
         </NavLink>
-        <NavLink className="floatLeft" exact to='/me'>
-          <MenuItem
-            image='me2.png'
-            title="Me"
-            altText='Me Menu'/>
+        <NavLink className="floatLeft" exact to="/me">
+          <MenuItem image="me2.png" title="Me" altText="Me Menu" />
         </NavLink>
-        <NavLink className="floatLeft" exact to='/blog'>
-          <MenuItem
-            image='blog2.png'
-            title="Blog"
-            altText='Blog Menu'/>
+        <NavLink className="floatLeft" exact to="/blog">
+          <MenuItem image="blog2.png" title="Blog" altText="Blog Menu" />
         </NavLink>
-        <NavLink className="floatLeft" exact to='/runningblog'>
+        {/* <NavLink className="floatLeft" exact to="/runningblog">
           <MenuItem
-            image='rblog.png'
+            image="rblog.png"
             title="Run Blog"
-            altText='Running Blog Menu'/>
-        </NavLink>
+            altText="Running Blog Menu"
+          />
+        </NavLink> */}
       </div>
-    )
+    );
   }
 }
 

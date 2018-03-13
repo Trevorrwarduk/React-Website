@@ -1,34 +1,43 @@
-:root  {
-  --blue:     #000022;
-  --green:    #EEFFEE;
-  --orange:   #EA601A;
-  --white:    #FFFFFF;
-  --grey:     #939393;
-  --black:    #000000;
-  --DGreen:   #007711;
-  --links:    #009944;
+/* Main Colours...  */
+/* Grey 343434 Background and headings*/
+
+:root {
+  --blue: #000022;
+  --green: #eeffee;
+  --orange: #ea601a;
+  --white: #ffffff;
+  --grey: #939393;
+  --black: #000000;
+  --DGreen: #007711;
+  --links: #939393;
+  --backG: #343434;
   --HeadFont: HoboStd;
   --BodyFont: Merriweather;
-};
+}
 @font-face {
-  font-family: 'HoboStd', 'Merriweather';
-  src: url('../fonts/HoboStd.otf');
-  src: url('../fonts/Merriweather-Regular.ttf');
+  font-family: "HoboStd", "Merriweather";
+  src: url("../fonts/HoboStd.otf");
+  src: url("../fonts/Merriweather-Regular.ttf");
 }
 
 body {
-  background: var(--black);
+  background: var(--backG);
   margin: 0;
   padding: 0;
   font-family: var(--BodyFont);
   font-size: 16px;
 }
-h1, h2, h3, h4, h5, h6 {
-  color: var(--DGreen);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--backG);
   font-family: var(--HeadFont);
 }
 a {
-  color: var(--links);
+  color: inherit;
   font-size: 16px;
   font-weight: 600;
 }
@@ -48,7 +57,7 @@ label {
   margin: 0;
   float: left;
   padding-left: 10px;
-  color: var(--DGreen);
+  color: var(--backG);
   font-family: var(--BodyFont);
   font-style: italic;
   font-weight: 500;
@@ -58,11 +67,14 @@ blockquote {
   background-color: inherit;
   padding: 10px 20px 10px 20px;
   font-size: 16px;
-  border-left: 5px solid var(--DGreen);
+  border-left: 5px solid var(--backG);
 }
 img[src$="centerme"] {
-  display:block;
+  display: block;
   margin: 0 auto;
+}
+.headingColor {
+  color: var(--grey);
 }
 .DGreenBack {
   background-color: var(--DGreen);
@@ -78,6 +90,12 @@ img[src$="centerme"] {
 }
 .blueColor {
   color: var(--blue);
+}
+.blackBack {
+  background-color: var(--black);
+}
+.blackColor {
+  color: var(--black);
 }
 .orangeBack {
   background-color: var(--orange);
@@ -117,16 +135,17 @@ img[src$="centerme"] {
 .headingArea {
   padding: 5px 5px 5px 5px;
   height: auto;
-  border: 4px solid var(--DGreen);
-  background-color: var(--black);
+  border: 2px solid var(--grey);
+  background-color: var(--backG);
   background-repeat: no-repeat;
   background-position: left;
 }
 .bottomArea {
   padding: 10px 0 30px 0;
-  border-bottom: 4px solid var(--DGreen);
-  border-right: 4px solid var(--DGreen);
-  border-left: 4px solid var(--DGreen);
+  background-color: var(--backG);
+  border-bottom: 0px solid var(--grey);
+  border-right: 0px solid var(--grey);
+  border-left: 0px solid var(--grey);
   height: auto;
 }
 .footerBar {
@@ -135,7 +154,7 @@ img[src$="centerme"] {
   height: 30px;
 }
 .strapline {
-  padding: 0;
+  padding: 5px 0 0 0;
   width: 100%;
   white-space: pre;
   text-align: center;
@@ -144,7 +163,7 @@ img[src$="centerme"] {
   margin: 5px 0 7px 0;
   border: 0;
   height: 3px;
-  background: var(--DGreen);
+  background: var(--backG);
 }
 .blankLine {
   margin: 1px 0 1px 0;
@@ -156,27 +175,27 @@ img[src$="centerme"] {
   width: 330px;
 }
 .menuBar {
-  color: var(--white);
+  color: var(--grey);
   width: 250px;
   padding: 0;
 }
 .blogSelectionBar {
   height: 45px;
   width: 100%;
-  padding: 0;
+  padding: 10px 0 0 0;
   margin: 0;
 }
 .blogSelect {
-    float: right;
-    margin:  0 10px 0 0;
-    padding: 5px 10px 5px 10px;
-    border: 2px solid var(--DGreen);
-    width: auto;
-    border-radius: 3px;
-    outline: none;
-    background: var(--white);
-    color: var(--DGreen);
-    font-weight: 500;
+  float: right;
+  margin: 0 10px 0 0;
+  padding: 5px 10px 5px 10px;
+  border: 2px solid var(--backG);
+  width: auto;
+  border-radius: 3px;
+  outline: none;
+  background: var(--white);
+  color: var(--backG);
+  font-weight: 500;
 }
 .blogInfoBar {
   width: 100%;
@@ -188,7 +207,7 @@ img[src$="centerme"] {
   width: auto;
   float: left;
   padding-left: 10px;
-  color: var(--DGreen);
+  color: var(--backG);
   font-style: italic;
   font-weight: 500;
 }
@@ -197,13 +216,13 @@ img[src$="centerme"] {
   float: right;
   height: auto;
   padding-right: 10px;
-  color: var(--DGreen);
+  color: var(--backG);
   font-style: italic;
   font-weight: 500;
 }
 .socialItem {
   padding: 0;
-  width:  45px;
+  width: 45px;
   height: 45px;
   text-decoration: none;
 }
@@ -213,34 +232,33 @@ img[src$="centerme"] {
 
 .menuItem {
   padding: 0;
-  width:  50px;
+  width: 50px;
   height: 50px;
   text-decoration: none;
 }
 .menuItem:hover {
   text-decoration: none;
-  color: var(--white);
+  color: var(--black);
 }
 .menuItem:focus {
   text-decoration: none;
-  color: var(--white);
+  color: var(--black);
 }
 .active {
   text-decoration: none;
   background-color: inherit;
-  color: var(--white);
+  color: var(--black);
 }
 .socialIcon {
   display: block;
-  height:  32px;
-  border: 2px solid var(--blue);
+  height: 32px;
+  border: 2px solid var(--grey);
   margin: auto;
-
 }
 .socialText {
-  font-size:    9px;
-  font-weight:  700;
-  font-family:  inherit;
+  font-size: 9px;
+  font-weight: 700;
+  font-family: inherit;
   text-align: center;
   text-decoration: none;
 }
@@ -248,17 +266,17 @@ img[src$="centerme"] {
   margin: auto;
   display: block;
   padding: 7px;
-  height:  34px;
+  height: 34px;
   text-decoration: none;
-  border: 2px solid var(--DGreen);
-  background-color: var(--white);
+  border: 2px solid rgba(00, 00, 00, 0.1);
+  background-color: var(--grey);
   border-radius: 12px;
 }
 .iconText {
-  font-size:    11px;
-  font-weight:  500;
-  font-family:  var(--BodyFont);
-  text-align:   center;
+  font-size: 11px;
+  font-weight: 500;
+  font-family: var(--BodyFont);
+  text-align: center;
   text-decoration: none;
 }
 .iconText:hover {
@@ -270,19 +288,19 @@ img[src$="centerme"] {
   text-decoration: none;
 }
 .contentArea {
-  color: var(--blue);
+  color: var(--backG);
   font-family: var(--BodyFont);
   background-color: var(--white);
 }
 .sideBar {
-  color: var(--blue);
+  color: var(--grey);
 }
 .sideBarSeperator {
   margin: 10px auto;
   border: 0;
   height: 2px;
   width: 75%;
-  background: var(--DGreen);
+  background: var(--grey);
 }
 .smallRoundImage {
   padding: 0;
