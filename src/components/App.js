@@ -12,7 +12,7 @@ var Me = require("./Me");
 var Blog = require("./Blog");
 var NotFound = require("./NotFound");
 var SocialBar = require("./SocialBar");
-var RunningBlog = require("./RunningBlog");
+// var RunningBlog = require("./RunningBlog");
 
 class App extends React.Component {
   render() {
